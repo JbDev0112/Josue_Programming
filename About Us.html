@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="download.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>About Us Section</title>
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* General Styling */
+    body {
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      padding-top: 100px;
+      position: relative;
+    }
+
+    /* Title Styling */
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #333;
+      letter-spacing: 2px;
+    }
+
+    /* Navbar Styling */
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      background-color: gray;
+    }
+
+    .navbar ul li {
+      list-style: none;
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: black;
+    }
+
+    /* Fade-in Text Animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Slide-in Image Animation */
+    .slide-in {
+      opacity: 0;
+      transform: translateX(50%);
+      animation: slideIn 2s forwards;
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(50%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Image Styling with Hover */
+    .image-section img {
+      width: 50%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out;
+    }
+
+    .image-section img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+
+    /* Content Styling */
+    .content {
+      float: left;
+      width: 50%;
+    }
+
+    .content h3 {
+      margin-top: 20px;
+      font-size: 30px;
+      color: #555;
+    }
+
+    .content p {
+      margin-top: 15px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #777;
+    }
+
+    /* Button Styling with Hover */
+    .button {
+      margin-top: 30px;
+    }
+
+    .button a {
+      display: inline-block;
+      background-color: #333;
+      padding: 12px 40px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      transition: 0.3s ease;
+    }
+
+    .button a:hover {
+      background-color: aqua;
+      transform: scale(1.1);
+    }
+
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 90%;
+        padding-top: 50px;
+      }
+
+      .content, .image-section {
+        width: 100%;
+        float: none;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .content h3 {
+        font-size: 24px;
+      }
+    }
+  </style>
+
+  <div class="section">
+    <div class="container fade-in">
+      <div class="title">
+        <h1>About Us</h1>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About Us.html">About</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="Shopping.html">Shopping</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="container-section">
+        <div class="content fade-in">
+          <h3>Jek Tech Market</h3>
+          <p>Our shop, Jek Tech Market shopping center, was established on September 19, 2024, by a dedicated team. We offer a wide range of marketing services designed to meet your unique needs. We are proud to be part of the community and believe in creating marketing jobs and contributing to a vibrant city.</p>
+          <div class="button">
+            <a href="About Us.html">Read More</a>
+          </div>
+        </div>
+
+        <div class="image-section slide-in">
+          <img src="About pics.jpg" alt="About Us">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

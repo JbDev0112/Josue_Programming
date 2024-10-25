@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="download.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="contact.css">
+  <title>Contact Us</title>
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
+    }
+
+  /* Navbar Styling */
+  .navbar ul {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      background-color: gray;
+    }
+
+    .navbar ul li {
+      list-style: none;
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #00cc99;
+    }
+
+    /* Contact Section Styles */
+    .contact {
+      position: relative;
+      min-height: 100vh;
+      padding: 50px 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #222;
+    }
+
+    .contact .content {
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .contact .content h2 {
+      font-size: 3em;
+      color: #01dbc2;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    .contact .content p {
+      color: #fff;
+      font-size: 1.1em;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      margin-top: 30px;
+    }
+
+    .container .contactInfo {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Icon Box Styling */
+    .container .contactInfo .box {
+      position: relative;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .container .contactInfo .box .icon {
+      position: relative;
+      min-width: 60px;
+      height: 60px;
+      background: #01dbc2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    .container .contactInfo .box .icon i {
+      color: #222;
+      font-size: 1.25em;
+    }
+
+    .container .contactInfo .box .text {
+      margin-left: 20px;
+      color: #fff;
+      font-size: 1.1em;
+    }
+
+    .container .contactInfo .box .text h3 {
+      color: #01dbc2;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .container .contactInfo .sci {
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .container .contactInfo .sci li {
+      list-style: none;
+    }
+
+    .container .contactInfo .sci li a {
+      color: green;
+      font-size: 1.5em;
+      transition: 0.25s;
+    }
+
+    .container .contactInfo .sci li a:hover {
+      color: #01dbc2;
+      filter: drop-shadow(0 0 5px #01dbc2);
+    }
+    
+  </style>
+   <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About Us.html">About</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="Shopping.html">Shopping</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </div>
+  
+  <section class="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>Electronic appliances, gadgets, faster modes of communication, and transport have added to the comfort factor in our lives. It has helped in improving the productivity of individuals and different business enterprises.</p>
+    </div>
+    
+
+    <div class="container">
+      <div class="contactInfo">
+        <!-- Address Box -->
+        <div class="box">
+          <div class="icon"><i class="fas fa-location-dot"></i></div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>GRC Building, 9th Rizal Ave Ext, <br> East Grace Park Caloocan</p>
+          </div>
+        </div>
+
+        <!-- Phone Box -->
+        <div class="box">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div class="text">
+            <h3>Phone Number</h3>
+            <p>0916 365 2595</p>
+            <p>0936 983 8965</p>
+            <p>0991 419 6690</p>
+          </div>
+        </div>
+
+        <!-- Email Box -->
+        <div class="box">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>Baltaoj5@gmail.com</p>
+            <p>alegreernesto.grc@gmail.com</p>
+            <p>kylejhelronnatalio@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="download.png">
+    <meta http-equiv="X-UA-Comatible" content="IE-edge">
+    <title>Jek Tech Market</title>
+    <link rel="icon" type="image/x-icon" href="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/441122441_831090422231434_5296948641507061464_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGFZwV7aCX8a7HOIyRpsPBTysn21yTh08jKyfbXJOHTyImsL7iddHzb86m_tK1T3x6z74-ZaF5Hvhn07xOfOHjO&_nc_ohc=0OYFivS-jPYQ7kNvgEfWD2d&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD1QG0SDjoq1ETtHHpZIMQwU1-nIqs2xhTH3iIU0lmivrfCA&oe=66663C6A">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(BBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 105vh;
+}
+
+.artext{
+ background: linear-gradient(to left, rgba(10, 194, 86, 0.993), rgba(3, 56, 3, 0.753), rgb(6, 63, 14), green, rgb(5, 131, 22), rgb(2, 58, 2), rgb(116, 221, 151));
+ background-clip: text;
+ display: inline;
+ color: transparent;
+ animation: animated 3s linear infinite;
+ font-size: 35px;
+}
+
+@keyframes animated{
+  to {background-position: 161px;}
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: rgb(63, 205, 50);
+    font-size: 40px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70p;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #00cc99;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgb(47, 128, 0);
+    margin-top: 13px;
+    color: #00cc99;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: green;
+    border: 2px solid green;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #00cc99;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    float: right;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}   
+.box::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.border-line{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.border-line::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.border-line::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}   
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.box form{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.box form h2{
+    color: aqua;
+    font-weight: 1000;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.box form .inputbox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form .inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.box form .inputbox input:valid ~ span,
+.box form .inputbox input:focus ~ span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.box form .inputbox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.box form .inputbox input:valid ~ span,
+.box form .inputbox input:focus ~ span{
+    height: 44px;
+}
+.box form .links{
+    display: flex;
+    justify-content: space-between;
+}
+.box form .links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.box form .links a:hover,
+.box form .links a:nth-child(2){
+    color: #fff;
+}
+.box form input[type="Submit"]{
+    border: white;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+.box form input[type="submit"]:active{
+    opacity: 0.8;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #00cc99;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 10px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 25;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 80px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    top: 600px;
+    margin-top: 10%;
+    letter-spacing: 1.2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #00cc99;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: green;
+}
+
+.content span{
+    color: #00cc99;
+    font-size: 65px
+}
+
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: green;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: green;
+}
+.icons ion-icon{
+    color: green;
+    font-size: 35px;
+    padding-left: 14px;
+    padding-bottom: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #00cc99;
+}
+
+</style>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="artext">Think Before You Buy in this Shop!</h2>
+            </div>
+<div>
+</div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About Us.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="Shopping.html">Shopping</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href=""> <button class="btn">Search</button></a>
+            </div>
+
+            <div class="box">
+                <span class="border-line"></span>
+                <form>
+                    <h2>Sign in</h2>
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>Username</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" required="required">
+                        <span>password</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <a href="">Forgot password</a>
+                        <a href="">Sign Up</a>
+                    </div>
+                    <input type="Submit" value="Login">
+                </form>
+            </div>
+
+        </div> 
+
+        <div class="content">
+            <h1>Jek Tech
+                 Market<br>Shopping Center</h1><span>Online Shopping</span>
+<br>
+            <p class="par">Online shopping is the activity of buying products and services over the internet using a web browser or mobile app.<br> It means buyers have to go online to reach a seller’s website and then select the product they want to purchase.<br> The buyer can pay for the goods and services either online with a credit or debit card or upon delivery. Online shopping...</p>
+        
+</br>
+
+                <button class="cn"><a href="menu.shopping">Shop Me</a></button></ion-icon>
+
+                    <div class="icons">
+                        <a href="https://www.facebook.com/login/"><ion-icon name="logo-facebook"></a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://twitter.com/login"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://accounts.google.com/"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="https://www.skype.com/en/"><ion-icon name="logo-skype"></ion-icon></a>
+                        </div>
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

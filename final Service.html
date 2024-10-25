@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="download.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Our Service</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      transition: 0.5s;
+    }
+    /* Navbar Styling */
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      background-color: #333;
+    }
+
+    .navbar ul li {
+      list-style: none;
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #00cc99;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: #c8e8e0;
+      padding-top: 50px;
+    }
+
+    h2 {
+      color: #2e937a;
+      font-weight: 400;
+    }
+
+    h1 {
+      color: #2e937a;
+      font-size: 45px;
+      margin-top: 10px;
+    }
+
+    .row {
+      padding-top: 50px;
+      width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .box {
+      width: 320px;
+      height: 500px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box img {
+      width: 250px;
+      height: auto;
+    }
+
+    .box h3 {
+      font-size: 25px;
+      padding-top: 20px;
+      color: #2e937a;
+    }
+
+    .box p {
+      color: #4e746b;
+      padding-top: 20px;
+      line-height: 25px;
+    }
+
+    .bnt {
+      width: 150px;
+      height: 40px;
+      background: #2e937a;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      font-size: 17px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .bnt:hover {
+      background: #fff;
+      color: #2e937a;
+      border: 1px solid #2e937a;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About Us.html">About</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="Shopping.html">Shopping</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <h2>Features</h2>
+  <h1>Our Features & Services</h1>
+
+  <div class="row">
+    <!-- First Box -->
+    <div class="box">
+      <img src="communication.png" alt="Communication">
+      <h3>Communication</h3>
+      <p>Communications technology: It performs three functions: design, construct, and maintain communication systems. Communication technology is inherited from information technology.</p>
+      <button class="bnt">See More</button>
+    </div>
+
+    <!-- Second Box -->
+    <div class="box">
+      <img src="HomeS.png" alt="Home Service">
+      <h3>Home Service</h3>
+      <p>Home services for projects like maintenance, remodeling, and cleaning. Home services cover tasks you may not be able to perform yourself due to schedule or limitations.</p>
+      <button class="bnt">See More</button>
+    </div>
+
+    <!-- Third Box -->
+    <div class="box">
+      <img src="appointment.png" alt="Online Appointment">
+      <h3>Online Appointment</h3>
+      <p>A system for scheduling or rescheduling appointments with a manager at Jek Technology using an app or website.</p>
+      <button class="bnt">See More</button>
+    </div>
+  </div>
+</body>
+</html>
